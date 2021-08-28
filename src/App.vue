@@ -1,17 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ul>
+    <li v-for="game in games" :key="game.id">{{ game.name }}</li>
+  </ul>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import axios from "axios";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  data() {
+    return {
+      games: [],
+    };
+  },
+  async created() {
+    axios
+      .get("https://api.rawg.io/api/games?key=" + process.env.VUE_APP_APIKEY)
+      .then((response) => {
+        console.log(response.data.result);
+        this.games = response.data.results;
+      });
+  },
+};
 </script>
 
 <style>
