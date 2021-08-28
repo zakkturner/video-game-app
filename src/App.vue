@@ -18,7 +18,7 @@ export default {
     axios
       .get("https://api.rawg.io/api/games?key=" + process.env.VUE_APP_APIKEY)
       .then((response) => {
-        console.log(response.data.result);
+        console.log(response.data.results);
         this.games = response.data.results;
       });
   },
