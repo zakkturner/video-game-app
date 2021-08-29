@@ -1,37 +1,27 @@
 <template>
-  <ul>
-    <li v-for="game in games" :key="game.id">{{ game.name }}</li>
-  </ul>
+  <game-list></game-list>
 </template>
 
 <script>
-import axios from "axios";
+import GameList from "./components/video-games/GameList";
 export default {
   name: "App",
-  components: {},
-  data() {
-    return {
-      games: [],
-    };
-  },
-  async created() {
-    axios
-      .get("https://api.rawg.io/api/games?key=" + process.env.VUE_APP_APIKEY)
-      .then((response) => {
-        console.log(response.data.results);
-        this.games = response.data.results;
-      });
+  components: {
+    GameList,
   },
 };
 </script>
 
 <style>
+body {
+  background: #253442;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /* color: #253442; */
   margin-top: 60px;
 }
 </style>
