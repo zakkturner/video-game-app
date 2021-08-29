@@ -1,5 +1,8 @@
 <template>
   <div class="card">
+    <div class="game-picture">
+      <slot name="picture"></slot>
+    </div>
     <slot></slot>
   </div>
 </template>
@@ -15,7 +18,13 @@ export default {};
   padding: 1rem;
   //   margin: 2rem auto;
   width: 20rem;
-  height: 20rem;
+  height: 30rem;
   background: #2c3e50;
+  display: grid;
+  grid-template-columns: 1fr;
+  .game-picture {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
