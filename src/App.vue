@@ -1,4 +1,5 @@
 <template>
+  <the-header></the-header>
   <game-list></game-list>
 </template>
 
@@ -15,6 +16,7 @@ export default {
 <style>
 body {
   background: #253442;
+  margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -22,6 +24,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /* color: #253442; */
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  display: grid;
+  grid-template-columns: 14% 1fr;
 }
 </style>
