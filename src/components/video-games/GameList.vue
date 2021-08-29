@@ -6,6 +6,9 @@
       :name="game.name"
       :img="game.background_image"
       :systems="game.parent_platforms"
+      :metacritic="game.metacritic"
+      :released="game.released"
+      :genres="game.genres"
     ></game-item>
   </ul>
 </template>
