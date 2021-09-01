@@ -4,7 +4,7 @@
     <nav>
       <ul class="link-list">
         <li class="item">
-          <a href="#" class="link">All Games 🎮</a>
+          <router-link class="link" to="/">All Games 🎮</router-link>
         </li>
         <li class="item">
           <a href="#" class="link">Most Popular 🏆</a>

@@ -71,7 +71,7 @@ export default {
     metacritic: Number,
     released: String,
     genres: Array,
-    esrb: String,
+    esrb: Object,
   },
 
   methods: {
@@ -79,9 +79,6 @@ export default {
       const dateObj = new Date(date + "T00:00:00");
       return new Intl.DateTimeFormat("en-US").format(dateObj);
     },
-  },
-  mounted() {
-    console.log(this.esrb);
   },
 };
 </script>
