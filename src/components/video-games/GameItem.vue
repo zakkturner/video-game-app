@@ -46,6 +46,17 @@
           </div>
           <hr />
         </div>
+        <div class="game-esrb">
+          <p class="release-date">
+            ESRB Rating:
+            <span class="info" v-if="esrb !== null || ''">{{ esrb.name }}</span>
+            <span class="info" v-else>Not Rated</span>
+          </p>
+          <hr />
+        </div>
+        <a href="#" class="more-link">
+          <button class="more-btn">More info</button>
+        </a>
       </div>
     </base-card>
   </li>
@@ -60,6 +71,7 @@ export default {
     metacritic: Number,
     released: String,
     genres: Array,
+    esrb: String,
   },
 
   methods: {
@@ -69,7 +81,7 @@ export default {
     },
   },
   mounted() {
-    console.log(this.genres);
+    console.log(this.esrb);
   },
 };
 </script>
@@ -81,10 +93,10 @@ export default {
   width: 100%;
   .game-img {
     width: 100%;
-    height: 100%;
+    height: 11em;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -93,10 +105,10 @@ export default {
       margin-bottom: 0px;
       border: 5px green solid;
       border-radius: 5%;
-      padding: 10px;
+      padding: 5px 15px;
       color: green;
       background: #fffffe;
-      font-size: 20px;
+      font-size: 25px;
       font-weight: 600;
     }
   }
@@ -124,11 +136,13 @@ export default {
 
     .title {
       color: #fff;
-      font-size: 22px;
+      font-size: 30px;
       font-weight: 700;
+      margin: 0;
     }
     .game-released,
-    .game-genre {
+    .game-genre,
+    .game-esrb {
       color: #c9c9c9;
       .release-date,
       .genre {
@@ -139,6 +153,17 @@ export default {
           font-size: 12px;
           color: #fff;
         }
+      }
+    }
+    .more-link {
+      .more-btn {
+        margin-top: 12px;
+        border: none;
+        border-radius: 25px;
+        padding: 15px 20px;
+        background-color: #475f75;
+        color: #fff;
+        font-weight: 600;
       }
     }
   }

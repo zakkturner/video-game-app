@@ -27,6 +27,12 @@
         <li class="item">
           <a href="#" class="link">Shooter 🔫</a>
         </li>
+        <li class="item">
+          <a href="#" class="link">Puzzle 🧩</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">Adventure ⛰️</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -42,6 +48,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 7px 0px 15px -7px rgba(0, 0, 0, 0.73);
   h2 {
     font-size: 30px;
   }
