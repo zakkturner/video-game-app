@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+
 import BaseCard from "./components/ui/BaseCard";
 import TheHeader from "./components/layout/TheHeader";
 const app = createApp(App);
