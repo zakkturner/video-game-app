@@ -16,22 +16,44 @@
       <h3>Genre</h3>
       <ul class="link-list">
         <li class="item">
-          <a href="#" class="link">Sports 🏈</a>
+          <router-link to="/sports" class="link">Sports 🏈</router-link>
         </li>
         <li class="item">
-          <a href="#" class="link">Action 🦸‍♂️</a>
+          <router-link to="/action" class="link">Action 🦸‍♂️</router-link>
         </li>
         <li class="item">
-          <a href="#" class="link">RPG 📚</a>
+          <router-link to="/role-playing-games-rpg" class="link"
+            >RPG 📚</router-link
+          >
         </li>
         <li class="item">
-          <a href="#" class="link">Shooter 🔫</a>
+          <router-link to="/shooter" class="link">Shooter 🔫</router-link>
         </li>
         <li class="item">
-          <a href="#" class="link">Puzzle 🧩</a>
+          <router-link to="/puzzle" class="link">Puzzle 🧩</router-link>
         </li>
         <li class="item">
-          <a href="#" class="link">Adventure ⛰️</a>
+          <router-link to="/adventure" class="link">Adventure ⛰️</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/strategy" class="link">Strategy ♟️</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/simulation" class="link">Simulation 👪</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/indie" class="link">Indie 🧑‍💻</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/racing" class="link">Racing 🏎️</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/casual" class="link">Casual 🍹</router-link>
+        </li>
+        <li class="item">
+          <router-link to="/massively-multiplayer" class="link"
+            >Massively Multiplayer 🌎
+          </router-link>
         </li>
       </ul>
     </nav>

@@ -133,7 +133,7 @@ export default {
 
     .title {
       color: #fff;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 700;
       margin: 0;
     }
