@@ -54,9 +54,9 @@
           </p>
           <hr />
         </div>
-        <a href="#" class="more-link">
+        <router-link :to="{ path: '/game/' + id }" class="more-link">
           <button class="more-btn">More info</button>
-        </a>
+        </router-link>
       </div>
     </base-card>
   </li>
@@ -72,6 +72,7 @@ export default {
     released: String,
     genres: Array,
     esrb: Object,
+    id: Number,
   },
 
   methods: {
@@ -158,7 +159,7 @@ export default {
         border: none;
         border-radius: 25px;
         padding: 15px 20px;
-        background-color: #475f75;
+        background-color: #ab6b00;
         color: #fff;
         font-weight: 600;
       }

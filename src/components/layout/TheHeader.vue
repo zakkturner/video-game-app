@@ -6,12 +6,12 @@
         <li class="item">
           <router-link class="link" to="/">All Games 🎮</router-link>
         </li>
-        <li class="item">
+        <!-- <li class="item">
           <a href="#" class="link">Most Popular 🏆</a>
         </li>
         <li class="item">
           <a href="#" class="link">Upcoming 📆 </a>
-        </li>
+        </li> -->
       </ul>
       <h3>Genre</h3>
       <ul class="link-list">

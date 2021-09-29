@@ -6,12 +6,14 @@ import BaseCard from "./components/ui/BaseCard";
 import TheHeader from "./components/layout/TheHeader";
 import GameList from "./components/video-games/GameList";
 import GamesByGenre from "./components/video-games/GamesByGenre";
+import GameInfo from "./components/video-games/GameInfo";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", component: GameList },
     { path: "/:genre", component: GamesByGenre },
+    { path: "/game/:id", component: GameInfo, props: true },
   ],
 });
 
