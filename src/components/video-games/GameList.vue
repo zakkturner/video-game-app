@@ -10,6 +10,7 @@
       :released="game.released"
       :genres="game.genres"
       :esrb="game.esrb_rating"
+      :id="game.id"
     ></game-item>
   </ul>
 </template>
@@ -22,6 +23,7 @@ export default {
   components: {
     GameItem,
   },
+
   data() {
     return {
       games: [],

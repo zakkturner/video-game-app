@@ -54,9 +54,9 @@
           </p>
           <hr />
         </div>
-        <a href="#" class="more-link">
+        <router-link :to="{ path: '/game/' + id }" class="more-link">
           <button class="more-btn">More info</button>
-        </a>
+        </router-link>
       </div>
     </base-card>
   </li>
@@ -71,7 +71,8 @@ export default {
     metacritic: Number,
     released: String,
     genres: Array,
-    esrb: String,
+    esrb: Object,
+    id: Number,
   },
 
   methods: {
@@ -79,9 +80,6 @@ export default {
       const dateObj = new Date(date + "T00:00:00");
       return new Intl.DateTimeFormat("en-US").format(dateObj);
     },
-  },
-  mounted() {
-    console.log(this.esrb);
   },
 };
 </script>
@@ -136,7 +134,7 @@ export default {
 
     .title {
       color: #fff;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: 700;
       margin: 0;
     }
@@ -161,7 +159,7 @@ export default {
         border: none;
         border-radius: 25px;
         padding: 15px 20px;
-        background-color: #475f75;
+        background-color: #ab6b00;
         color: #fff;
         font-weight: 600;
       }

@@ -1,14 +1,17 @@
 <template>
   <the-header></the-header>
-  <game-list></game-list>
+
+  <router-view></router-view>
+
+  <!-- <game-list></game-list> -->
 </template>
 
 <script>
-import GameList from "./components/video-games/GameList";
+// import GameList from "./components/video-games/GameList";
 export default {
   name: "App",
   components: {
-    GameList,
+    // GameList,
   },
 };
 </script>
